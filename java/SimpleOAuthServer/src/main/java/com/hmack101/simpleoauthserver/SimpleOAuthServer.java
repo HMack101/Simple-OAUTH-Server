@@ -26,7 +26,7 @@ public class SimpleOAuthServer {
     public static void main(String[] args) {
         // TODO code application logic here
         ResourceConfig config = new ResourceConfig(ResourceHandler.class);
-        config.register(AuthenticationFilter.class);
+        //config.register(AuthenticationFilter.class);
         
         ServletHolder servlet = new ServletHolder(new ServletContainer(config));
 
@@ -45,8 +45,5 @@ public class SimpleOAuthServer {
         server.destroy();
        
     }
-    
-}
-
     
 }
